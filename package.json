@@ -13,6 +13,8 @@
     "logs:status": "ts-node src/scripts/logs-status.ts",
     "logs:view": "ts-node src/scripts/logs-view.ts",
     "logs:tail": "ts-node src/scripts/logs-tail.ts",
+    "errors:check": "ts-node src/scripts/errors-check.ts",
+    "errors:watch": "ts-node src/scripts/errors-watch.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
