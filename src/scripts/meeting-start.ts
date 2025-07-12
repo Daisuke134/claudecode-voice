@@ -44,7 +44,7 @@ async function startMeeting() {
   
   // 4. 全員に朝会モード開始を通知
   console.log(chalk.blue('\n📢 朝会モード開始を全員に通知...'));
-  voiceBus.broadcastMessage('朝会モード開始');
+  voiceBus.broadcastVoiceMessage('朝会モード開始');
   await sleep(1000);
   
   // 5. Bossに朝会の司会を依頼
