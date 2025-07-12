@@ -15,6 +15,10 @@
     "logs:tail": "ts-node src/scripts/logs-tail.ts",
     "errors:check": "ts-node src/scripts/errors-check.ts",
     "errors:watch": "ts-node src/scripts/errors-watch.ts",
+    "progress:check": "ts-node src/scripts/progress-check.ts",
+    "progress:watch": "ts-node src/scripts/progress-watch.ts",
+    "meeting:start": "ts-node src/scripts/meeting-start.ts",
+    "meeting:stop": "ts-node src/scripts/meeting-stop.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
