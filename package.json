@@ -19,6 +19,7 @@
     "progress:watch": "ts-node src/scripts/progress-watch.ts",
     "meeting:start": "ts-node src/scripts/meeting-start.ts",
     "meeting:stop": "ts-node src/scripts/meeting-stop.ts",
+    "agents:exit": "ts-node src/scripts/agents-exit.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
