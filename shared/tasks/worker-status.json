@@ -1,0 +1,14 @@
+{
+  "workers": {
+    "worker1": {
+      "status": "idle",
+      "currentTask": null,
+      "lastUpdate": null
+    },
+    "worker2": {
+      "status": "idle",
+      "currentTask": null,
+      "lastUpdate": null
+    }
+  }
+}
