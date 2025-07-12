@@ -42,9 +42,14 @@ async function startMeeting() {
   console.log(chalk.gray('\n⏱️  エージェントの起動を待機中...'));
   await sleep(5000); // 5秒待機
   
-  // 4. Bossに朝会開始を指示（シンプルに！）
-  console.log(chalk.green('\n🎯 Bossに朝会開始を依頼...'));
-  voiceBus.sendMessage('boss', '朝会を開始してください');
+  // 4. 全員に朝会モード開始を通知
+  console.log(chalk.blue('\n📢 朝会モード開始を全員に通知...'));
+  voiceBus.broadcastMessage('朝会モード開始');
+  await sleep(1000);
+  
+  // 5. Bossに朝会の司会を依頼
+  console.log(chalk.green('\n🎯 Bossに朝会の司会を依頼...'));
+  voiceBus.sendMessage('boss', '朝会の司会をお願いします。npm runコマンドは使わず、Boss.mdの朝会セクションの手順に従ってください。');
   
   console.log(chalk.yellow('\n⏱️  朝会が進行中です...'));
   console.log(chalk.gray('朝会を終了するには、別のターミナルで以下を実行:'));
